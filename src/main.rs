@@ -1,3 +1,11 @@
+mod api;
+mod commands;
+mod config;
+mod utils;
+
+use clap::Parser;
+use commands::Cli;
+
 fn main() {
-    println!("Hello, world!");
+    let _cli = Cli::parse();
 }
